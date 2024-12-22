@@ -1,0 +1,12 @@
+type Query {
+    getStudentByDateNaissance(date:String): [StudentDTO]
+}
+type StudentDTO {
+    id : ID
+    name : String
+    email : String
+    dateNaissance : String
+}
+type Mutation {
+    saveStudent(id_Student:ID,name:String,email:String,dateNaissance:String): StudentDTO
+}
